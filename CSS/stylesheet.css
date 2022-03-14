@@ -2,6 +2,18 @@ body{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size:110%;
   background-color: rgb(44, 41, 41);
+  margin: auto;
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ads"
+    "footer footer footer";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  
 }
 
 header { 
@@ -17,7 +29,7 @@ footer {
 
 article {
   background-color: rgb(44, 41, 41);
-  color:black
+  color:black;
  
 }
 
@@ -27,6 +39,7 @@ width: 3rem;
 height: auto;
 border-radius: 50%;
 margin: 2.5px;
+
 }
 
 #sidebar {
@@ -89,6 +102,7 @@ background-color: rgb(248, 244, 229);
 #Education{
 margin: left 50px;
 margin-right: 20%;
+color: black;
 }
 
 a.link{
@@ -117,3 +131,52 @@ padding:0px;
 ul{
   margin-left: 3.5%;
 }
+
+a:hover{
+  background-color:rgb(44, 41, 41);
+  transform:rotateX(160deg);
+  transition: none;
+  size-adjust: 11%;
+}
+
+nav {
+  display:inline-flex;
+  gap: 0rem;
+}
+
+a {
+  flex:auto;
+  color: #fff;
+  padding: 0rem;
+  text-align: center;
+  text-decoration:solid;
+  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
+}
+
+a:hover,
+a:focus {
+  background color:rgb(green)
+  color: #333;
+}
+
+
+header, footer, article, nav, div {
+  padding: 20px;
+  background:rgb(yellow);
+}
+#pageHeader {
+  grid-area: header;
+}
+#pageFooter {
+  grid-area: footer;
+}
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAds { 
+  grid-area: ads; 
+  }
