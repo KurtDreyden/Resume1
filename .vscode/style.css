@@ -102,7 +102,7 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: green;
+    color:green;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -129,7 +129,7 @@ section .title::after{
 
 /* menu btn styling */
 .menu-btn{
-    color: green;
+    color:lime;
     font-size: 23px;
     cursor:pointer;
     display: none;
@@ -210,12 +210,13 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: green;
-    background: none;
+    color: white;
+    background: transparent;
 }
 
 /* about section styling */
 .about .title::after{
+    align-content: stretch;
     content: "who i am";
     background: black;
 }
@@ -565,7 +566,7 @@ footer span a:hover{
   margin: 5px;
   transition: all 0.3s ease;
 }
-.icon:hover{
+.icon{
     transition: all 0.3s ease;
     color: red;
     animation: ro 2s linear infinite;
